@@ -1,0 +1,29 @@
+name: HashDOM
+on:
+  push:
+    branches:
+      - main
+      - release-*
+    pull_request:
+      branches:
+        - main
+        - release-*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-versions: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install deps
+        run: npm ci
+      - name: Build Project
+        run: npm run build
