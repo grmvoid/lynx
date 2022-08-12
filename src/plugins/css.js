@@ -15,3 +15,11 @@ HashDOM.prototype.removeClass = function (className) {
 
   return this;
 };
+
+HashDOM.prototype.css = function (property, value) {
+  this.forEach((el) => {
+    el.style[property] = value;
+  });
+
+  return this;
+};
