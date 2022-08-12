@@ -1,25 +1,25 @@
-import { HashDOM } from '../hashdom';
+import { HashDOM } from '../hashdom'
 
 if (window.$ === undefined) {
-  window.$ = {};
+  window.$ = {}
 }
 
 HashDOM.prototype.ajax = function (url, options = {}) {
-  return fetch(url, options);
-};
+  return fetch(url, options)
+}
 
 HashDOM.prototype.get = function (url, options = {}) {
   return this.ajax(url, {
     method: 'GET',
-    ...options,
-  });
-};
+    ...options
+  })
+}
 
 HashDOM.prototype.post = function (url, options = {}) {
   return this.ajax(url, {
     method: 'POST',
-    ...options,
-  });
-};
+    ...options
+  })
+}
 
-window.$.ajax = HashDOM.prototype.ajax;
+window.$.ajax = HashDOM.prototype.ajax
