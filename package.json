@@ -1,0 +1,21 @@
+{
+  "name": "hashdom",
+  "version": "0.1.0",
+  "author": "Dominik Szamburski <dominikszamburski99@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "watch": "webpack --config ./webpack.config.js --watch --progress"
+  },
+  "dependencies": {
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack-cli": "^4.10.0"
+  }
+}
