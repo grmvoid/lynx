@@ -20,7 +20,7 @@ A lightweight DOM manipulation class based on ES6
 
 ## Authors
 
-- [@macotsuu](https://www.github.com/macotsuu)
+- [@nulldark](https://www.github.com/nulldark)
 
 ## License
 
