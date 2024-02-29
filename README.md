@@ -20,9 +20,9 @@ A lightweight DOM manipulation class based on ES6
 
 ## Authors
 
-- [@nulldark](https://www.github.com/nulldark)
+- [@nuldark](https://www.github.com/nuldark)
 
 ## License
 
-[GPL-3.0](LICENSE)
+[MIT](LICENSE)
 
