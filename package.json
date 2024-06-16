@@ -9,9 +9,6 @@
     "watch": "webpack --config ./webpack.config.js --watch --progress",
     "lint": "eslint --fix ./src/**/*.js"
   },
-  "dependencies": {
-    "webpack": "^5.88.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
@@ -22,6 +19,7 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.92.0",
     "webpack-cli": "^5.1.4"
   }
 }
