@@ -2,18 +2,18 @@ name: HashDOM
 on:
   push:
     branches:
-      - main
+      - master
       - release-*
     pull_request:
       branches:
-        - main
+        - master
         - release-*
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-versions: [18.x]
+        node-versions: [18.x, 20.x, 21.x, 22.x]
     steps:
       - uses: actions/checkout@v3
         with:
