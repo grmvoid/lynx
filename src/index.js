@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { HashDOM } from './hashdom'
+import { Lynx } from './lynx'
 
 import './plugins/dom'
 import './plugins/css'
@@ -15,10 +15,10 @@ if (window.$ === undefined) {
   window.$ = {}
 }
 
-window.hash = (selector) => {
+window.lynx = (selector) => {
   if (typeof selector === 'string' || selector instanceof String) {
-    return new HashDOM(...document.querySelectorAll(selector))
+    return new Lynx(...document.querySelectorAll(selector))
   }
 
-  return new HashDOM(selector)
+  return new Lynx(selector)
 }

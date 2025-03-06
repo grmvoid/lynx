@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export class HashDOM extends Array {
+export class Lynx extends Array {
   ready (callback) {
     const isReadySelector = this.some((el) => {
       return el.readyState !== null && el.readyState !== 'loading'

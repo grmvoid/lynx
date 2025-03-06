@@ -1,4 +1,4 @@
-name: HashDOM
+name: Lynx
 on:
   push:
     branches:

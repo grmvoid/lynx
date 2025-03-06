@@ -1,7 +1,6 @@
-
-# HashDOM
-
+# Lynx
 A lightweight DOM manipulation class based on ES6
+
 ## Usage/Examples
 
 ```html
@@ -12,15 +11,11 @@ A lightweight DOM manipulation class based on ES6
 
 ```javascript
     <script>
-        hash(document).ready(function () {
-            hash('#container').html('Hi');
+    lynx(document).ready(function () {
+            lynx('#container').html('Hi');
         });
     <script>
 ```
-
-## Authors
-
-- [@nuldark](https://www.github.com/nuldark)
 
 ## License
 

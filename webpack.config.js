@@ -1,5 +1,5 @@
-const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
+const path = require('path')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -7,7 +7,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'hashdom.[contenthash].js',
+    filename: 'lynx.[contenthash].js',
     clean: true,
   },
   module: {
@@ -28,4 +28,4 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin()],
   },
-};
+}
