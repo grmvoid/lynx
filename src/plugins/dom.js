@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const { HashDOM } = require('../hashdom')
+const { Lynx } = require('../lynx')
 
-HashDOM.prototype.html = function (html) {
+Lynx.prototype.html = function (html) {
   this.forEach((el) => {
     el.innerHTML = html
   })
@@ -15,7 +15,7 @@ HashDOM.prototype.html = function (html) {
   return this
 }
 
-HashDOM.prototype.append = function (html) {
+Lynx.prototype.append = function (html) {
   this.forEach((el) => {
     el.innerHTML = el.innerHTML + html
   })
@@ -23,7 +23,7 @@ HashDOM.prototype.append = function (html) {
   return this
 }
 
-HashDOM.prototype.prepend = function (html) {
+Lynx.prototype.prepend = function (html) {
   this.forEach((el) => {
     el.innerHTML = html + el.innerHTML
   })

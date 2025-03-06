@@ -5,28 +5,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { HashDOM } from '../hashdom'
+import { Lynx } from '../lynx'
 
 if (window.$ === undefined) {
   window.$ = {}
 }
 
-HashDOM.prototype.ajax = function (url, options = {}) {
+Lynx.prototype.ajax = function (url, options = {}) {
   return fetch(url, options)
 }
 
-HashDOM.prototype.get = function (url, options = {}) {
+Lynx.prototype.get = function (url, options = {}) {
   return this.ajax(url, {
     method: 'GET',
     ...options
   })
 }
 
-HashDOM.prototype.post = function (url, options = {}) {
+Lynx.prototype.post = function (url, options = {}) {
   return this.ajax(url, {
     method: 'POST',
     ...options
   })
 }
 
-window.$.ajax = HashDOM.prototype.ajax
+window.$.ajax = Lynx.prototype.ajax

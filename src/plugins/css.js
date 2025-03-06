@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const { HashDOM } = require('../hashdom')
+const { Lynx } = require('../lynx')
 
-HashDOM.prototype.addClass = function (className) {
+Lynx.prototype.addClass = function (className) {
   this.forEach((el) => {
     el.classList.add(className)
   })
@@ -15,7 +15,7 @@ HashDOM.prototype.addClass = function (className) {
   return this
 }
 
-HashDOM.prototype.removeClass = function (className) {
+Lynx.prototype.removeClass = function (className) {
   this.forEach((el) => {
     el.classList.remove(className)
   })
@@ -23,7 +23,7 @@ HashDOM.prototype.removeClass = function (className) {
   return this
 }
 
-HashDOM.prototype.css = function (property, value) {
+Lynx.prototype.css = function (property, value) {
   this.forEach((el) => {
     el.style[property] = value
   })
